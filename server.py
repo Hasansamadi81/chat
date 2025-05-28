@@ -4,8 +4,8 @@ import threading
 import sqlite3
 from database import init_db, upsert_user, set_offline, insert_message,DB_FILE, db_lock
 
-SERVER_HOST = '127.0.0.1'
-SERVER_PORT = 5000
+SERVER_HOST = '0.0.0.0'
+SERVER_PORT = 12345
 BUFFER_SIZE = 4096
 PREDEFINED_QUERIES = {
     1: "SELECT username FROM connections WHERE is_online = 1;",
